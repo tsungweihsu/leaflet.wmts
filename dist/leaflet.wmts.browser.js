@@ -83,7 +83,7 @@ L.TileLayer.WMTS = L.TileLayer.extend({
     const tilewidth = se.x - nw.x;
 
     const ident = this.matrixIds[zoom].identifier;
-    const tilematrix = `${this.wmtsParams.tilematrixset}:${ident}`;
+    const tilematrix = `${ident}`;
     const X0 = this.matrixIds[zoom].topLeftCorner.lng;
     const Y0 = this.matrixIds[zoom].topLeftCorner.lat;
     const tilecol = Math.floor((nw.x - X0) / tilewidth);
